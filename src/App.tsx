@@ -1,6 +1,6 @@
 import SearchBar from './components/SearchBar';
 import GifList from './components/GifList';
-import { SearchProvider } from './searchContext';
+import { SearchProvider } from './context/searchContext';
 import { QueryClientProvider, QueryClient } from '@tanstack/react-query';
 
 const queryClient = new QueryClient();

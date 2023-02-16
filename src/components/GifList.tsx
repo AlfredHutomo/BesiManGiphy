@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 
-import { useSearchContext } from '../searchContext';
+import { useSearchContext } from '../context/searchContext';
 import GifItem from './GifItem';
 import { fetchSearch } from '../config/api';
 
