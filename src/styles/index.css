@@ -70,6 +70,23 @@ button:focus-visible {
   }
 }
 
+.center-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 500px;
+  height: 40px;
+  font-size: large;
+  font-weight: bold;
+  padding: 14px;
+}
+
 .gif-container {
   width: 100%;
   max-width: 100vw;
@@ -82,4 +99,5 @@ button:focus-visible {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-block: 10px;
 }

@@ -8,7 +8,7 @@ const queryClient = new QueryClient();
 function App() {
   return (
     <div className='App'>
-      <div className='container'>
+      <div className='center-container'>
         <QueryClientProvider client={queryClient}>
           <SearchProvider>
             <SearchBar />

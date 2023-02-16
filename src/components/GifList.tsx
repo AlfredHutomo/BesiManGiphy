@@ -5,11 +5,11 @@ import GifItem from './GifItem';
 import { fetchSearch } from '../config/api';
 
 const GifList = () => {
-  const { search } = useSearchContext();
+  const { debouncedSearch } = useSearchContext();
 
   const { data, isLoading, isFetching } = useQuery({
-    queryKey: ['search', search],
-    queryFn: () => fetchSearch(search),
+    queryKey: ['search', debouncedSearch],
+    queryFn: () => fetchSearch(debouncedSearch),
   });
 
   if (isFetching || isLoading) {
