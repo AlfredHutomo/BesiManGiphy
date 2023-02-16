@@ -1,9 +1,26 @@
-import SearchBar from './components/SearchBar';
-import GifList from './components/GifList';
 import { SearchProvider } from './context/searchContext';
 import { QueryClientProvider, QueryClient } from '@tanstack/react-query';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import SearchPage from './pages/SearchPage';
+import IntroPage from './pages/IntroPage';
+import IronManPage from './pages/IronManPage';
 
 const queryClient = new QueryClient();
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <IntroPage />,
+  },
+  {
+    path: '/search',
+    element: <SearchPage />,
+  },
+  {
+    path: '/iron-man',
+    element: <IronManPage />,
+  },
+]);
 
 function App() {
   return (
@@ -11,8 +28,7 @@ function App() {
       <div className='center-container'>
         <QueryClientProvider client={queryClient}>
           <SearchProvider>
-            <SearchBar />
-            <GifList />
+            <RouterProvider router={router} />
           </SearchProvider>
         </QueryClientProvider>
       </div>
