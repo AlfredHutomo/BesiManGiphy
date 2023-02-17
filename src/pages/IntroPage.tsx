@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import GiphyLogo from '../../public/giphy-logo.svg';
+import GiphyLogo from '/giphy-logo.svg';
 
 const IntroPage = () => {
   return (
