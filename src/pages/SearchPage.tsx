@@ -5,7 +5,7 @@ const SearchPage = () => {
   return (
     <>
       <h2>SEARCH YOUR GIPHY</h2>
-      <SearchBar defaultSearch='cat' />
+      <SearchBar />
       <GifList />
     </>
   );
