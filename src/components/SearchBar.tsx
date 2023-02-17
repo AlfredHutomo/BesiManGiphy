@@ -24,6 +24,7 @@ const SearchBar = ({ defaultSearch, lockSearch }: SearchBarProps) => {
       value={search}
       disabled={lockSearch}
       onChange={(e) => setSearch(e.target.value)}
+      placeholder='Type your Giphy here...'
     />
   );
 };
