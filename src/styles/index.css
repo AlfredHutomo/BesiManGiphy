@@ -78,6 +78,15 @@ button:focus-visible {
   align-items: center;
 }
 
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .search-bar {
   width: 100%;
   max-width: 500px;

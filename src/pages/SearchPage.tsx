@@ -4,7 +4,8 @@ import GifList from '../components/GifList';
 const SearchPage = () => {
   return (
     <>
-      <SearchBar />
+      <h2>SEARCH YOUR GIPHY</h2>
+      <SearchBar defaultSearch='cat' />
       <GifList />
     </>
   );
